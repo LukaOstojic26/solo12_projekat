@@ -20,6 +20,12 @@ class LQR():
     def compute_control(self, ref_position,  ref_velocity, position, velocity):
         controlPD = self.Kp * (ref_position - position) + self.Kd * (ref_velocity -
                                                                    velocity) + self.B * ref_velocity 
-        controlLQR = np.dot(-self.K, np.array(position[9], position[10]))
-        control = self.beta*controlPD + self.alfa*controlLQR
+        controlLQR_temp = np.dot(self.K, np.array(position[1], position[4]))
+
+        controlPD[1] = 0 
+        controlPD[4] = 0
+                                                           
+        controlLQR = np.array([0, controlLQR_temp[0], 0, 0, controlLQR_temp[1], 0, 0, 0, 0, 0, 0, 0])
+
+        control = controlPD + controlLQR
         return np.clip(control, -self.max_control, self.max_control)

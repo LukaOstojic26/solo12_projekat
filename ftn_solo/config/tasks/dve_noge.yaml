@@ -15,7 +15,7 @@ loop:
 joint_controller:
   Kp : 8.0
   Kd : 0.05
-  K : [320.0, 240.0]
+  K : [500, 500]
   alfa : 1.0
   beta : 1.0
 
