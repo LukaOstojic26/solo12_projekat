@@ -1,0 +1,3 @@
+[console_scripts]
+connector_node = ftn_solo.connector:main
+simulation_node = ftn_solo.visualize:simulate
