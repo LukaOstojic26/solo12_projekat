@@ -1,0 +1,85 @@
+[1.433s] Invoking command in '/media/luka/HDD/solo12/src/ftn_solo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(solo_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ftn_solo build --build-base /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build install --record /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log --single-version-externally-managed install_data
+[1.804s] running egg_info
+[1.804s] creating build/ftn_solo/ftn_solo.egg-info
+[1.832s] writing build/ftn_solo/ftn_solo.egg-info/PKG-INFO
+[1.832s] writing dependency_links to build/ftn_solo/ftn_solo.egg-info/dependency_links.txt
+[1.833s] writing entry points to build/ftn_solo/ftn_solo.egg-info/entry_points.txt
+[1.833s] writing requirements to build/ftn_solo/ftn_solo.egg-info/requires.txt
+[1.833s] writing top-level names to build/ftn_solo/ftn_solo.egg-info/top_level.txt
+[1.833s] writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+[1.891s] reading manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+[1.891s] adding license file 'LICENSE'
+[1.891s] writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+[1.892s] running build
+[1.892s] running build_py
+[1.892s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build
+[1.893s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib
+[1.893s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+[1.894s] copying ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+[1.894s] copying ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+[1.895s] copying ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+[1.895s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+[1.895s] copying ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+[1.896s] copying ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+[1.896s] copying ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+[1.896s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+[1.897s] copying ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+[1.897s] copying ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+[1.897s] copying ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+[1.905s] creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+[1.906s] copying ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+[1.906s] copying ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+[1.906s] copying ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+[1.906s] copying ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+[1.907s] running install
+[1.915s] running install_lib
+[1.943s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+[1.943s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+[1.944s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+[1.944s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+[1.944s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+[1.944s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+[1.945s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+[1.945s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+[1.946s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+[1.946s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+[1.946s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+[1.946s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+[1.947s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+[1.947s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+[1.947s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+[1.947s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+[1.948s] copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+[1.948s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/__init__.py to __init__.cpython-312.pyc
+[1.948s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/visualize.py to visualize.cpython-312.pyc
+[1.948s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/__init__.py to __init__.cpython-312.pyc
+[1.949s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/pd.py to pd.cpython-312.pyc
+[1.949s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/lqr_i_pd.py to lqr_i_pd.cpython-312.pyc
+[1.949s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/connector.py to connector.cpython-312.pyc
+[1.953s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_base.py to task_base.cpython-312.pyc
+[1.976s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/__init__.py to __init__.cpython-312.pyc
+[1.976s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_joint_spline.py to task_joint_spline.cpython-312.pyc
+[1.977s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/__init__.py to __init__.cpython-312.pyc
+[1.978s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/visualization_utils.py to visualization_utils.cpython-312.pyc
+[1.978s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/bullet_env.py to bullet_env.cpython-312.pyc
+[1.979s] byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/types.py to types.cpython-312.pyc
+[1.979s] running install_data
+[1.980s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index
+[1.980s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index
+[1.980s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages
+[1.981s] copying resource/ftn_solo -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages
+[1.981s] copying package.xml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo
+[1.981s] copying launch/robot_launch.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo
+[1.981s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config
+[1.982s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz
+[1.982s] copying config/rviz/robot.rviz -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz
+[1.992s] creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+[1.992s] copying config/tasks/eurobot_demo.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+[1.992s] copying config/tasks/dve_noge.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+[1.996s] running install_egg_info
+[2.025s] Copying build/ftn_solo/ftn_solo.egg-info to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo-0.1.0-py3.12.egg-info
+[2.026s] running install_scripts
+[2.202s] Installing connector_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo
+[2.202s] Installing simulation_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo
+[2.202s] writing list of installed files to '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log'
+[2.237s] Invoked command in '/media/luka/HDD/solo12/src/ftn_solo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(solo_env) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ftn_solo build --build-base /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build install --record /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log --single-version-externally-managed install_data

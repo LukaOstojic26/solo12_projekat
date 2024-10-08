@@ -1,0 +1,83 @@
+running egg_info
+creating build/ftn_solo/ftn_solo.egg-info
+writing build/ftn_solo/ftn_solo.egg-info/PKG-INFO
+writing dependency_links to build/ftn_solo/ftn_solo.egg-info/dependency_links.txt
+writing entry points to build/ftn_solo/ftn_solo.egg-info/entry_points.txt
+writing requirements to build/ftn_solo/ftn_solo.egg-info/requires.txt
+writing top-level names to build/ftn_solo/ftn_solo.egg-info/top_level.txt
+writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+reading manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+copying ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+copying ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+copying ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+copying ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+copying ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+copying ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+copying ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+copying ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+copying ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks
+creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+copying ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+copying ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+copying ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+copying ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils
+running install
+running install_lib
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/__init__.py to __init__.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/visualize.py to visualize.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/__init__.py to __init__.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/pd.py to pd.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/lqr_i_pd.py to lqr_i_pd.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/connector.py to connector.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_base.py to task_base.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/__init__.py to __init__.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_joint_spline.py to task_joint_spline.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/__init__.py to __init__.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/visualization_utils.py to visualization_utils.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/bullet_env.py to bullet_env.cpython-312.pyc
+byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/types.py to types.cpython-312.pyc
+running install_data
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages
+copying resource/ftn_solo -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages
+copying package.xml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo
+copying launch/robot_launch.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz
+copying config/rviz/robot.rviz -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz
+creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+copying config/tasks/eurobot_demo.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+copying config/tasks/dve_noge.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks
+running install_egg_info
+Copying build/ftn_solo/ftn_solo.egg-info to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo-0.1.0-py3.12.egg-info
+running install_scripts
+Installing connector_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo
+Installing simulation_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo
+writing list of installed files to '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log'

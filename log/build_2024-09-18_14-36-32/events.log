@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.000359] (ftn_solo) JobQueued: {'identifier': 'ftn_solo', 'dependencies': OrderedDict()}
+[0.000454] (ftn_solo) JobStarted: {'identifier': 'ftn_solo'}
+[0.099159] (-) TimerEvent: {}
+[0.199608] (-) TimerEvent: {}
+[0.299985] (-) TimerEvent: {}
+[0.400369] (-) TimerEvent: {}
+[0.500719] (-) TimerEvent: {}
+[0.600959] (-) TimerEvent: {}
+[0.701319] (-) TimerEvent: {}
+[0.801667] (-) TimerEvent: {}
+[0.901954] (-) TimerEvent: {}
+[1.002194] (-) TimerEvent: {}
+[1.102513] (-) TimerEvent: {}
+[1.202897] (-) TimerEvent: {}
+[1.303220] (-) TimerEvent: {}
+[1.403500] (-) TimerEvent: {}
+[1.432540] (ftn_solo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/ftn_solo', 'build', '--build-base', '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build', 'install', '--record', '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/media/luka/HDD/solo12/src/ftn_solo', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'luka', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/openrobots/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/luka', 'OLDPWD': '/media/luka/HDD/solo12', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(solo_env) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'MANAGERPID': '2671', 'SYSTEMD_EXEC_PID': '3160', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '12837', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'luka', 'JOURNAL_STREAM': '8:22192', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/openrobots/lib/pkgconfig:', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'luka', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/media/luka/HDD/solo12/solo_env/bin:/opt/openrobots/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/luka-A320M-H:@/tmp/.ICE-unix/2966,unix/luka-A320M-H:/tmp/.ICE-unix/2966', 'INVOCATION_ID': 'ec689bba64314ffea247f5a3f0ba6ebc', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': 'solo_env', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:6967f82e-71c4-4a24-aae8-318b622d87cf', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VIRTUAL_ENV': '/media/luka/HDD/solo12/solo_env', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages:/opt/openrobots/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/openrobots:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.503613] (-) TimerEvent: {}
+[1.603959] (-) TimerEvent: {}
+[1.704284] (-) TimerEvent: {}
+[1.803786] (ftn_solo) StdoutLine: {'line': b'running egg_info\n'}
+[1.804281] (-) TimerEvent: {}
+[1.804535] (ftn_solo) StdoutLine: {'line': b'creating build/ftn_solo/ftn_solo.egg-info\n'}
+[1.832128] (ftn_solo) StdoutLine: {'line': b'writing build/ftn_solo/ftn_solo.egg-info/PKG-INFO\n'}
+[1.832534] (ftn_solo) StdoutLine: {'line': b'writing dependency_links to build/ftn_solo/ftn_solo.egg-info/dependency_links.txt\n'}
+[1.832832] (ftn_solo) StdoutLine: {'line': b'writing entry points to build/ftn_solo/ftn_solo.egg-info/entry_points.txt\n'}
+[1.833154] (ftn_solo) StdoutLine: {'line': b'writing requirements to build/ftn_solo/ftn_solo.egg-info/requires.txt\n'}
+[1.833438] (ftn_solo) StdoutLine: {'line': b'writing top-level names to build/ftn_solo/ftn_solo.egg-info/top_level.txt\n'}
+[1.833685] (ftn_solo) StdoutLine: {'line': b"writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'\n"}
+[1.890926] (ftn_solo) StdoutLine: {'line': b"reading manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'\n"}
+[1.891341] (ftn_solo) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.891761] (ftn_solo) StdoutLine: {'line': b"writing manifest file 'build/ftn_solo/ftn_solo.egg-info/SOURCES.txt'\n"}
+[1.892075] (ftn_solo) StdoutLine: {'line': b'running build\n'}
+[1.892351] (ftn_solo) StdoutLine: {'line': b'running build_py\n'}
+[1.892733] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build\n'}
+[1.893010] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib\n'}
+[1.893563] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo\n'}
+[1.893888] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo\n'}
+[1.894332] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo\n'}
+[1.894857] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo\n'}
+[1.895173] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers\n'}
+[1.895513] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers\n'}
+[1.895855] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers\n'}
+[1.896191] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers\n'}
+[1.896547] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks\n'}
+[1.896858] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks\n'}
+[1.897173] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks\n'}
+[1.897537] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks\n'}
+[1.904385] (-) TimerEvent: {}
+[1.905616] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils\n'}
+[1.905923] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils\n'}
+[1.906118] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils\n'}
+[1.906362] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils\n'}
+[1.906503] (ftn_solo) StdoutLine: {'line': b'copying ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils\n'}
+[1.906948] (ftn_solo) StdoutLine: {'line': b'running install\n'}
+[1.914833] (ftn_solo) StdoutLine: {'line': b'running install_lib\n'}
+[1.943283] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo\n'}
+[1.943687] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo\n'}
+[1.944024] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/visualize.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo\n'}
+[1.944243] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers\n'}
+[1.944531] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers\n'}
+[1.944770] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers\n'}
+[1.944996] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/controllers/lqr_i_pd.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers\n'}
+[1.945279] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/connector.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo\n'}
+[1.945792] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks\n'}
+[1.946145] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_base.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks\n'}
+[1.946382] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks\n'}
+[1.946645] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/tasks/task_joint_spline.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks\n'}
+[1.946901] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils\n'}
+[1.947153] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/__init__.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils\n'}
+[1.947445] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/visualization_utils.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils\n'}
+[1.947716] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/bullet_env.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils\n'}
+[1.947988] (ftn_solo) StdoutLine: {'line': b'copying /media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/build/lib/ftn_solo/utils/types.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils\n'}
+[1.948321] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/__init__.py to __init__.cpython-312.pyc\n'}
+[1.948601] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/visualize.py to visualize.cpython-312.pyc\n'}
+[1.948792] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/__init__.py to __init__.cpython-312.pyc\n'}
+[1.948977] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/pd.py to pd.cpython-312.pyc\n'}
+[1.949171] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/controllers/lqr_i_pd.py to lqr_i_pd.cpython-312.pyc\n'}
+[1.949429] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/connector.py to connector.cpython-312.pyc\n'}
+[1.953579] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_base.py to task_base.cpython-312.pyc\n'}
+[1.975895] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/__init__.py to __init__.cpython-312.pyc\n'}
+[1.976329] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/tasks/task_joint_spline.py to task_joint_spline.cpython-312.pyc\n'}
+[1.977497] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/__init__.py to __init__.cpython-312.pyc\n'}
+[1.977828] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/visualization_utils.py to visualization_utils.cpython-312.pyc\n'}
+[1.978347] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/bullet_env.py to bullet_env.cpython-312.pyc\n'}
+[1.979158] (ftn_solo) StdoutLine: {'line': b'byte-compiling /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo/utils/types.py to types.cpython-312.pyc\n'}
+[1.979670] (ftn_solo) StdoutLine: {'line': b'running install_data\n'}
+[1.979993] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index\n'}
+[1.980324] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index\n'}
+[1.980606] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages\n'}
+[1.980913] (ftn_solo) StdoutLine: {'line': b'copying resource/ftn_solo -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ament_index/resource_index/packages\n'}
+[1.981169] (ftn_solo) StdoutLine: {'line': b'copying package.xml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo\n'}
+[1.981525] (ftn_solo) StdoutLine: {'line': b'copying launch/robot_launch.py -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo\n'}
+[1.981742] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config\n'}
+[1.981942] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz\n'}
+[1.982137] (ftn_solo) StdoutLine: {'line': b'copying config/rviz/robot.rviz -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/rviz\n'}
+[1.992106] (ftn_solo) StdoutLine: {'line': b'creating /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks\n'}
+[1.992533] (ftn_solo) StdoutLine: {'line': b'copying config/tasks/eurobot_demo.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks\n'}
+[1.992748] (ftn_solo) StdoutLine: {'line': b'copying config/tasks/dve_noge.yaml -> /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/share/ftn_solo/config/tasks\n'}
+[1.996092] (ftn_solo) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.004474] (-) TimerEvent: {}
+[2.024753] (ftn_solo) StdoutLine: {'line': b'Copying build/ftn_solo/ftn_solo.egg-info to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/python3.12/site-packages/ftn_solo-0.1.0-py3.12.egg-info\n'}
+[2.025917] (ftn_solo) StdoutLine: {'line': b'running install_scripts\n'}
+[2.104593] (-) TimerEvent: {}
+[2.201791] (ftn_solo) StdoutLine: {'line': b'Installing connector_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo\n'}
+[2.202219] (ftn_solo) StdoutLine: {'line': b'Installing simulation_node script to /media/luka/HDD/solo12/src/ftn_solo/install/ftn_solo/lib/ftn_solo\n'}
+[2.202621] (ftn_solo) StdoutLine: {'line': b"writing list of installed files to '/media/luka/HDD/solo12/src/ftn_solo/build/ftn_solo/install.log'\n"}
+[2.204704] (-) TimerEvent: {}
+[2.236692] (ftn_solo) CommandEnded: {'returncode': 0}
+[2.257887] (ftn_solo) JobEnded: {'identifier': 'ftn_solo', 'rc': 0}
+[2.259037] (-) EventReactorShutdown: {}
