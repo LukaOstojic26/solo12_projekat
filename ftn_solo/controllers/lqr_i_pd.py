@@ -86,15 +86,15 @@ class LQR():
         q2_2 = position[4] + (np.pi/2)
 
         ########################################################
-        self.i += 1
+       # self.i += 1
 
-        x_val.append(self.i)
-        y_val.append(q1_1)
-        plt.xlim(0, 2000)
-        plt.ylim(-10, 10)
-        plt.plot(x_val, y_val)
-        plt.show()
-        plt.pause(0.001)
+       # x_val.append(self.i)
+       # y_val.append(q1_1)
+       # plt.xlim(0, 2000)
+       # plt.ylim(-10, 10)
+       # plt.plot(x_val, y_val)
+       # plt.show()
+       # plt.pause(0.001)
 
         ########################################################
 
@@ -105,8 +105,8 @@ class LQR():
         #controlLQR1 = np.dot(-self.K, np.array([q1_1, q1_2, velocity[1], angular_velocity[0][0]]) - np.array([np.pi, 0, 0, 0]))
         #controlLQR2 = np.dot(-self.K, np.array([q2_1, q2_2, velocity[4], angular_velocity[0][0]]) - np.array([np.pi, 0, 0, 0]))
 
-        controlLQR1 = np.dot(-self.K, np.array([q1_1, q1_2, angular_velocity[0][1], velocity[1]]) - np.array([np.pi, 0, 0, 0]))
-        controlLQR2 = np.dot(-self.K, np.array([q2_1, q2_2, angular_velocity[0][1], velocity[4]]) - np.array([np.pi, 0, 0, 0]))
+        controlLQR1 = np.dot(-self.K, np.array([q1_1, q1_2, -angular_velocity[0][1] - velocity[1], velocity[1]]) - np.array([np.pi, 0, 0, 0]))
+        controlLQR2 = np.dot(-self.K, np.array([q2_1, q2_2, -angular_velocity[0][1] - velocity[4], velocity[4]]) - np.array([np.pi, 0, 0, 0]))
 
         controlPD[1] = 0   
         controlPD[4] = 0
