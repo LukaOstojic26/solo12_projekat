@@ -1,4 +1,5 @@
 import pinocchio as pin
+from pinocchio.utils import *
 import numpy as np
 
 urdf_filename = '/media/luka/HDD/solo12/src/robot_properties_solo/src/robot_properties_solo/resources/urdf/solo12.urdf'
@@ -20,7 +21,7 @@ print("q: %s" % q.T)
 pin.framesForwardKinematics(model, data, q)
 
 
-for i, name in zip(range(12), model.names):
+for i, name in zip(range(14), model.names):
     print("---------------------------\n")
-    print("{}\n\n{}".format(name, data.oMf[i]))
+    print("{}\n\n{}\n\n{}".format(name, data.oMi[i], data.Ycrb[i]))
     print("---------------------------\n")
