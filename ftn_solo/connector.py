@@ -215,7 +215,8 @@ class MujocoConnector(SimulationConnector):
         self.data = mujoco.MjData(self.model)
         self.data.qpos[0:3] = pos
         mujoco.mju_euler2Quat(self.data.qpos[3:7], rpy, "XYZ")
-        self.data.qpos[7:] = 0
+        self.data.qpos[7:] = 0 
+        self.data.qpos[8::3] = -1.57
         self.data.qvel[:] = 0
         if fixed:
             self.model.body("base_link").jntnum = 0

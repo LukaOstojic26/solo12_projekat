@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/media/luka/HDD/solo12/install/ftn_solo/lib/python3.12/site-packages",
+        "/media/luka/HDD/solo12/install/robot_properties_solo/lib/python3.12/site-packages",
+        "/opt/openrobots/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/media/luka/HDD/solo12/install/ftn_solo/lib/python3.12/site-packages",
+        "/media/luka/HDD/solo12/install/robot_properties_solo/lib/python3.12/site-packages",
+        "/opt/openrobots/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

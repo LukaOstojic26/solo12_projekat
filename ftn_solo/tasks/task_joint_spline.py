@@ -3,6 +3,7 @@ import numpy as np
 from scipy.interpolate import CubicSpline
 from .task_base import TaskBase
 from ftn_solo.controllers import PDWithFrictionCompensation
+from ftn_solo.controllers import LQR
 
 class SplineData:
     def __init__(self, yaml_config, num_joints, poses) -> None:
@@ -16,7 +17,7 @@ class TaskJointSpline(TaskBase):
 
     def __init__(self,  num_joints, robot_type,  config_yaml) -> None:
         super().__init__(num_joints, robot_type, config_yaml)
-        self.joint_controller = PDWithFrictionCompensation(self.num_joints, self.config["joint_controller"])
+        self.joint_controller = LQR(self.num_joints, self.config["joint_controller"])
         self.parse_poses(self.config["poses"])
         self.on_start = SplineData(
             self.config["on_start"], self.num_joints, self.poses)
@@ -51,12 +52,12 @@ class TaskJointSpline(TaskBase):
         self.compute_trajectory(t, self.last_pose, self.loop[self.loop_phase])
         self.loop_phase = (self.loop_phase+1) % len(self.loop)
 
-    def following_spline(self, t, q, qv):
+    def following_spline(self, t, q, qv, sensors):
         self.ref_position = self.trajectory(t)
         self.ref_velocity = self.trajectory(t, 1)
-        self.control = self.joint_controller.compute_control(self.ref_position, self.ref_velocity, q, qv)
+        self.control = self.joint_controller.compute_control(self.ref_position, self.ref_velocity, q, qv, sensors)
         return t >= self.transition_end
 
     def compute_control(self, t, q, qv, sensors):
-        self.tick(t, q, qv)
+        self.following_spline(t, q, qv, sensors)
         return self.control
