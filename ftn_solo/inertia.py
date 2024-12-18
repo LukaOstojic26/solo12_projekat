@@ -7,25 +7,9 @@ urdf_filename = '/media/luka/HDD/solo12/src/robot_properties_solo/src/robot_prop
 model = pin.buildModelFromUrdf(urdf_filename, pin.JointModelFreeFlyer())
 data = model.createData()
 
-joint_id = {
+q = pin.randomConfiguration(model)
 
-    "root_joint" : 1,
-    "FL_HAA" : 2,
-    "FL_HFE" : 3,
-    "FL_KFE" : 4,
-    "FR_HAA" : 5,
-    "FR_HFE" : 6,
-    "FR_KFE" : 7,
-    "HL_HAA" : 8,
-    "HL_HFE" : 9,
-    "HL_KFE" : 10,
-    "HR_HAA" : 11,
-    "HR_HFE" : 12,
-    "HR_KFE" : 13
-
-}
-
-q = np.zeros(model.nq)
+q[:] = 0
 
 q[2] = 0.534
 q[4] = 0.7071068
@@ -41,13 +25,81 @@ grupa1 = {"FR_HFE", "FR_KFE", "FL_HFE", "FL_KFE"}
 grupa2 = {"root_joint", "FL_HAA", "FR_HAA", "HL_HAA", "HL_HFE", "HL_KFE", "HR_HAA", "HR_HFE", "HR_KFE"}
 
 I1 = 0
+m1 = 0
+x1 = 0
+y1 = 0
+z1 = 0
+
 I2 = 0
+m2 = 0
+x2 = 0
+y2 = 0
+z2 = 0
+
+#############Moment inercije (prva grupa)##########################
 
 for i in grupa1:
-   I1 = I1 + data.oMf[joint_id[i]].rotation*model.inertias[joint_id[i]].inertia*np.transpose(data.oMf[joint_id[i]].rotation) + np.dot(data.oMf[joint_id[i]].translation, data.oMf[joint_id[i]].translation)*model.inertias[joint_id[i]].mass
+   R = data.oMf[model.getFrameId(i)].rotation
+   R_t = np.transpose(R)
+   Is = model.inertias[model.getJointId(i)].inertia
+   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever)
+   pos_t = np.array([pos_t])
+   pos = np.array(pos_t)
+   pos = pos.T
+   mass = model.inertias[model.getJointId(i)].mass
+
+   I1 = I1 + np.matmul(R, np.matmul(Is, R_t)) + np.matmul(pos, pos_t)*mass
+
+   m1 = m1 + model.inertias[model.getJointId(i)].mass
+
+####################################################################
+
+##################Pozicija centra mase (prva grupa)#################
+
+for i in grupa1:
+   x1 = x1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[0] + model.inertias[model.getJointId(i)].lever[0])
+   y1 = y1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[1] + model.inertias[model.getJointId(i)].lever[1])
+   z1 = z1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[2] + model.inertias[model.getJointId(i)].lever[2])
+
+xg1 = x1/m1
+yg1 = y1/m1
+zg1 = z1/m1
+
+rc1 = np.array([xg1, yg1, zg1])
+
+###################################################################
+
+#############Moment inercije (druga grupa)#########################
 
 for i in grupa2:
-   I2 = I2 + data.oMf[joint_id[i]].rotation*model.inertias[joint_id[i]].inertia*np.transpose(data.oMf[joint_id[i]].rotation) + np.dot(data.oMf[joint_id[i]].translation - np.array([0, 0, 0.534]), data.oMf[joint_id[i]].translation - np.array([0, 0, 0.534]))*model.inertias[joint_id[i]].mass
+   R = data.oMf[model.getFrameId(i)].rotation
+   R_t = np.transpose(R)
+   Is = model.inertias[model.getJointId(i)].inertia
+   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever)
+   pos_t = np.array([pos_t])
+   pos = np.array(pos_t)
+   pos = pos.T
+   mass = model.inertias[model.getJointId(i)].mass
 
+   I2 = I2 + np.matmul(R, np.matmul(Is, R_t)) + np.matmul(pos - np.array([[0.0], [0.0], [0.3395]]), pos_t - np.array([[0.0, 0.0, 0.3395]]))*mass
 
-print("I1 = {}\nI2 = {}".format(I1, I2))
+   m2 = m2 + model.inertias[model.getJointId(i)].mass
+
+#####################################################################
+
+##################Pozicija centra mase (druga grupa)#################
+
+for i in grupa2:
+   x2 = x2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[0] + model.inertias[model.getJointId(i)].lever[0])
+   y2 = y2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[1] + model.inertias[model.getJointId(i)].lever[1])
+   z2 = z2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[2] + model.inertias[model.getJointId(i)].lever[2])
+
+xg2 = x2/m2
+yg2 = y2/m2
+zg2 = z2/m2
+
+rc2 = np.array([xg2, yg2, zg2])
+
+#####################################################################
+
+print("I1 = {}\nm1 = {}\nrc1 = {}\n\nI2 = {}\nm2 = {}\nrc2 - rc1 = {}".format(I1, m1, rc1, I2, m2, rc2 - rc1))
