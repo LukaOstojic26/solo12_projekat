@@ -22,38 +22,28 @@ print("q: %s" % q.T)
 pin.framesForwardKinematics(model, data, q)
 
 grupa1 = {"FR_HFE", "FR_KFE", "FL_HFE", "FL_KFE"}
-grupa2 = {"root_joint", "FL_HAA", "FR_HAA", "HL_HAA", "HL_HFE", "HL_KFE", "HR_HAA", "HR_HFE", "HR_KFE"}
+grupa2 = {"root_joint", "FL_HAA", "FR_HAA", "HL_HAA", "HL_HFE", "HL_KFE", "HR_HAA", "HR_HFE", "HR_KFE"} #dodaj "root_joint"
 
-I1 = 0
+
+I1 = np.zeros((3, 3))
 m1 = 0
 x1 = 0
 y1 = 0
 z1 = 0
 
-I2 = 0
+I2 = np.zeros((3, 3))
 m2 = 0
 x2 = 0
 y2 = 0
 z2 = 0
 
-for i in grupa1:
-   R = data.oMf[model.getFrameId(i)].rotation
-   R_t = np.transpose(R)
-   Is = model.inertias[model.getJointId(i)].inertia
-   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever)
-   pos_t = np.array([pos_t])
-   pos = np.array(pos_t)
-   pos = pos.T
-   mass = model.inertias[model.getJointId(i)].mass
-
-   I1 = I1 + np.matmul(R, np.matmul(Is, R_t)) + np.matmul(pos, pos_t)*mass
-
-   m1 = m1 + model.inertias[model.getJointId(i)].mass
+##################Pozicija centra mase (prva grupa)#################
 
 for i in grupa1:
    x1 = x1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[0] + model.inertias[model.getJointId(i)].lever[0])
    y1 = y1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[1] + model.inertias[model.getJointId(i)].lever[1])
    z1 = z1 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[2] + model.inertias[model.getJointId(i)].lever[2])
+   m1 = m1 + model.inertias[model.getJointId(i)].mass
 
 xg1 = x1/m1
 yg1 = y1/m1
@@ -61,24 +51,15 @@ zg1 = z1/m1
 
 rc1 = np.array([xg1, yg1, zg1])
 
-for i in grupa2:
-   R = data.oMf[model.getFrameId(i)].rotation
-   R_t = np.transpose(R)
-   Is = model.inertias[model.getJointId(i)].inertia
-   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever)
-   pos_t = np.array([pos_t])
-   pos = np.array(pos_t)
-   pos = pos.T
-   mass = model.inertias[model.getJointId(i)].mass
+###################################################################
 
-   I2 = I2 + np.matmul(R, np.matmul(Is, R_t)) + np.matmul(pos - np.array([[0.0], [0.0], [0.3395]]), pos_t - np.array([[0.0, 0.0, 0.3395]]))*mass
-
-   m2 = m2 + model.inertias[model.getJointId(i)].mass
+##################Pozicija centra mase (druga grupa)#################
 
 for i in grupa2:
    x2 = x2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[0] + model.inertias[model.getJointId(i)].lever[0])
    y2 = y2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[1] + model.inertias[model.getJointId(i)].lever[1])
    z2 = z2 + model.inertias[model.getJointId(i)].mass*(data.oMf[model.getFrameId(i)].translation[2] + model.inertias[model.getJointId(i)].lever[2])
+   m2 = m2 + model.inertias[model.getJointId(i)].mass
 
 xg2 = x2/m2
 yg2 = y2/m2
@@ -86,4 +67,44 @@ zg2 = z2/m2
 
 rc2 = np.array([xg2, yg2, zg2])
 
-print("I1 = {}\nm1 = {}\nrc1 = {}\n\nI2 = {}\nm2 = {}\nrc2 - rc1 = {}".format(I1, m1, rc1, I2, m2, rc2 - rc1))
+#####################################################################
+
+#############Moment inercije (prva grupa)##########################
+
+for i in grupa1:
+   R = data.oMf[model.getFrameId(i)].rotation
+   R_t = np.transpose(R)
+   Is = model.inertias[model.getJointId(i)].inertia
+   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever) - rc1
+   pos_t = np.array([pos_t])
+   pos = np.array(pos_t)
+   pos = pos.T
+   mass = model.inertias[model.getJointId(i)].mass
+
+   I1 = I1 + np.matmul(R, np.matmul(Is, R_t)) + ((pos[0]*pos[0] + pos[1]*pos[1] + pos[2]*pos[2])*np.eye(3) - np.matmul(pos, pos_t))*mass
+
+####################################################################
+
+#############Moment inercije (druga grupa)#########################
+
+for i in grupa2:
+   R = data.oMf[model.getFrameId(i)].rotation
+   R_t = np.transpose(R)
+   Is = model.inertias[model.getJointId(i)].inertia
+   pos_t = data.oMf[model.getFrameId(i)].translation + R.dot(model.inertias[model.getJointId(i)].lever) - rc2
+   pos_t = np.array([pos_t])
+   pos = np.array(pos_t)
+   pos = pos.T
+   mass = model.inertias[model.getJointId(i)].mass
+
+   I2 = I2 + np.matmul(R, np.matmul(Is, R_t)) + ((pos[0]*pos[0] + pos[1]*pos[1] + pos[2]*pos[2])*np.eye(3) - np.matmul(pos, pos_t))*mass
+
+#####################################################################
+
+print("I1 = {}\nm1 = {}\nrc1 = {}\n\nI2 = {}\nm2 = {}\nrc2 - [0, 0, 0.3375] = {}".format(I1, m1, rc1, I2, m2, rc2 - np.array([0.0, 0.0, 0.3375])))
+
+#########################################
+###########################################
+
+
+
